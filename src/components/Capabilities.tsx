@@ -3,30 +3,29 @@
 import { motion } from "motion/react";
 import { FadingVideo } from "./FadingVideo";
 
-const CAPABILITIES_VIDEO_SRC =
-  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_094631_d30ab262-45ee-4b7d-99f3-5d5848c8ef13.mp4";
+const CAPABILITIES_VIDEO_SRC = "/videos/capabilities.mp4";
 
 const CARDS = [
   {
-    title: "AI Scenery",
-    body: "AI analyzes your product to create indistinguishable natural environments — from Icelandic cliffs to misty forests.",
-    tags: ["Natural Context", "Photo Realism", "Infinite Settings", "Eco-Vibe"],
+    title: "Full Stack Web",
+    body: "I build fast, scalable web apps end to end with React, Next.js, and Node — from pixel-perfect UI to solid backend.",
+    tags: ["ReactJS", "NextJS", "Node.js", "Golang"],
     // Material Icons: image
     iconPath:
       "M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21H5Zm1-4h12l-3.75-5-3 4L9 13l-3 4Z",
   },
   {
-    title: "Batch Production",
-    body: "Style your entire product line in minutes. Create a unified visual identity for catalogues and social media without weeks of retouching.",
-    tags: ["Scale Fast", "Visual Consistency", "Time Saver", "Ready to Post"],
+    title: "AI Automation",
+    body: "Automate your workflows with intelligent n8n pipelines. Connect your tools and cut manual work without weeks of setup.",
+    tags: ["n8n Creator", "Workflows", "Time Saver", "Integrations"],
     // Material Icons: movie
     iconPath:
       "M4 6.47 5.76 10H20v8H4V6.47M22 4h-4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.89-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4Z",
   },
   {
-    title: "Smart Lighting",
-    body: "Automatic lighting and material adjustment. Achieve flawless integration with realistic shadows and sunlight.",
-    tags: ["Ray Tracing", "Physical Shadows", "Studio Quality", "Sunlight Sync"],
+    title: "AI Development",
+    body: "Custom AI solutions and model integrations. Ship production-grade agents with LangChain, LangGraph, and LlamaIndex.",
+    tags: ["LangChain", "LangGraph", "Agentic AI", "LlamaIndex"],
     // Material Icons: lightbulb
     iconPath:
       "M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1Zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7Z",
@@ -53,15 +52,15 @@ export function Capabilities() {
         {/* Header */}
         <div className="mb-auto">
           <motion.p {...enterInView(0)} className="text-sm font-body text-white/80 mb-6">
-            {"// Capabilities"}
+            {"// What I Do"}
           </motion.p>
           <motion.h2
             {...enterInView(0.15)}
             className="font-heading italic text-white text-6xl md:text-7xl lg:text-[6rem] leading-[0.9] tracking-[-3px]"
           >
-            Production
+            Services
             <br />
-            evolved
+            offered
           </motion.h2>
         </div>
 

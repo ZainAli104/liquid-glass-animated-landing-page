@@ -6,8 +6,7 @@ import { BlurText } from "./BlurText";
 import { Navbar } from "./Navbar";
 import { ArrowUpRight, PlayIcon, ClockIcon, GlobeIcon } from "./Icons";
 
-const HERO_VIDEO_SRC =
-  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_080021_d598092b-c4c2-4e53-8e46-94cf9064cd50.mp4";
+const HERO_VIDEO_SRC = "/videos/hero.mp4";
 
 const HIDDEN = { filter: "blur(10px)", opacity: 0, y: 20 };
 const VISIBLE = { filter: "blur(0px)", opacity: 1, y: 0 };
@@ -19,8 +18,8 @@ const enter = (delay: number) => ({
 });
 
 const STATS = [
-  { Icon: ClockIcon, value: "34.5 Min", label: "Average Videos Watch Time" },
-  { Icon: GlobeIcon, value: "2.8B+", label: "Users Across the Globe" },
+  { Icon: ClockIcon, value: "4+ Years", label: "Professional Engineering Experience" },
+  { Icon: GlobeIcon, value: "30+", label: "AI Projects Delivered" },
 ];
 
 const PARTNERS = ["Aeon", "Vela", "Apex", "Orbit", "Zeno"];
@@ -49,13 +48,13 @@ export function Hero() {
               New
             </span>
             <span className="text-sm text-white/90 font-body pr-3">
-              Maiden Crewed Voyage to Mars Arrives 2026
+              Available for Freelance Projects Online 24/7
             </span>
           </motion.div>
 
           {/* Headline */}
           <BlurText
-            text="Venture Past Our Sky Across the Universe"
+            text="Building Software Beyond the Ordinary"
             className="mt-6 text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] max-w-2xl justify-center tracking-[-4px]"
           />
 
@@ -64,19 +63,19 @@ export function Hero() {
             {...enter(0.8)}
             className="mt-4 text-sm md:text-base text-white max-w-2xl font-body font-light leading-tight"
           >
-            Discover the universe in ways once unimaginable. Our pioneering vessels and
-            breakthrough engineering bring deep-space exploration within reach&mdash;secure
+            I&apos;m Zain Ali, a software engineer crafting full-stack apps and
+            breakthrough AI systems that bring ambitious ideas within reach&mdash;reliable
             and extraordinary.
           </motion.p>
 
           {/* CTAs */}
           <motion.div {...enter(1.1)} className="flex items-center gap-6 mt-6">
             <button className="liquid-glass-strong rounded-full px-5 py-2.5 text-sm font-medium text-white font-body flex items-center gap-2">
-              Start Your Voyage
+              Let&apos;s Work Together
               <ArrowUpRight className="h-5 w-5" />
             </button>
             <button className="text-sm font-medium text-white font-body flex items-center gap-2">
-              View Liftoff
+              View Work
               <PlayIcon className="h-4 w-4" />
             </button>
           </motion.div>
@@ -103,7 +102,7 @@ export function Hero() {
         {/* Partners */}
         <motion.div {...enter(1.4)} className="flex flex-col items-center gap-4 pb-8">
           <div className="liquid-glass rounded-full px-3.5 py-1 text-xs font-medium text-white font-body">
-            Collaborating with top aerospace pioneers globally
+            Trusted by clients and teams across the globe
           </div>
           <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16">
             {PARTNERS.map((name) => (

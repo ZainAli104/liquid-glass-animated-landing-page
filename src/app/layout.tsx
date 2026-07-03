@@ -18,9 +18,9 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Venture Past Our Sky",
+  title: "Zain Ali — Software Engineer",
   description:
-    "Discover the universe in ways once unimaginable. Our pioneering vessels and breakthrough engineering bring deep-space exploration within reach—secure and extraordinary.",
+    "I'm Zain Ali, a software engineer crafting full-stack apps and breakthrough AI systems that bring ambitious ideas within reach—reliable and extraordinary.",
 };
 
 export default function RootLayout({

@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "./Icons";
 
-const NAV_LINKS = ["Home", "Voyages", "Worlds", "Innovation", "Plan Launch"];
+const NAV_LINKS = ["Home", "About", "Skills", "Work", "Contact"];
 
 export function Navbar() {
   return (
@@ -10,7 +10,7 @@ export function Navbar() {
         href="#"
         className="liquid-glass rounded-full w-12 h-12 flex items-center justify-center shrink-0"
       >
-        <span className="font-heading italic text-white text-2xl leading-none">a</span>
+        <span className="font-heading italic text-white text-2xl leading-none">z</span>
       </a>
 
       {/* Center pill (desktop only) */}
@@ -25,7 +25,7 @@ export function Navbar() {
           </a>
         ))}
         <button className="bg-white text-black rounded-full px-4 py-2 text-sm font-medium font-body whitespace-nowrap flex items-center gap-1 ml-1">
-          Claim a Spot
+          Contact Me
           <ArrowUpRight className="h-4 w-4" />
         </button>
       </div>
